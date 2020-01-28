@@ -1,0 +1,36 @@
+$cell-size: 40px;
+$cell-color: #2196F3;
+$cell-hover: #42A5F5;
+$cell-active: #1E88E5;
+$cell-border: #248aca;
+
+.cell {
+  width: $cell-size;
+  height: $cell-size;
+  background-color: $cell-color;
+  border: 1px solid $cell-border;
+  line-height: $cell-size;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $cell-hover;
+  }
+  &:active {
+    background-color: $cell-active;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.cover {
+  background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
+  &:active {
+    background-color: transparent;
+  }
+}
